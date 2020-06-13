@@ -7,12 +7,12 @@
 
 'use strict';
 
-var ReactIs = require('react-is');
-var assign = require('object-assign');
+import ReactIs from 'react-is';
+import assign from 'object-assign';
 
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
-var has = require('./lib/has');
-var checkPropTypes = require('./checkPropTypes');
+import ReactPropTypesSecret from './lib/ReactPropTypesSecret';
+import has from './lib/has';
+import checkPropTypes from './checkPropTypes';
 
 var printWarning = function() {};
 
@@ -35,7 +35,7 @@ function emptyFunctionThatReturnsNull() {
   return null;
 }
 
-module.exports = function(isValidElement, throwOnDirectAccess) {
+export default function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
   var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
   var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.

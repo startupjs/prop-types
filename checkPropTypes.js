@@ -100,4 +100,4 @@ checkPropTypes.resetWarningCache = function() {
   }
 }
 
-module.exports = checkPropTypes;
+export default checkPropTypes;
