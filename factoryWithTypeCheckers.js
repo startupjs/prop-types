@@ -8,12 +8,12 @@
 'use strict';
 
 import ReactIs from 'react-is';
-import assign from 'object-assign';
 
 import ReactPropTypesSecret from './lib/ReactPropTypesSecret';
 import has from './lib/has';
 import checkPropTypes from './checkPropTypes';
 
+var assign = Object.assign;
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
