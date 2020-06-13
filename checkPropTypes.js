@@ -7,12 +7,13 @@
 
 'use strict';
 
+import ReactPropTypesSecret from './lib/ReactPropTypesSecret';
+import has from './lib/has'
+
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
   var loggedTypeFailures = {};
-  var has = require('./lib/has');
 
   printWarning = function(text) {
     var message = 'Warning: ' + text;
