@@ -3,6 +3,10 @@
   "version": "15.7.2-0",
   "description": "Runtime type checking for React props and similar objects.",
   "main": "index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "files": [
     "LICENSE",
